@@ -160,7 +160,7 @@ elif dongle_config.mode == 1:
             print "[!] Device name %s not found!" % dongle_config.name
 else:
     # Bluetooth LE
-    cm = ble.CentralManager()
+    cm = pyble.CentralManager()
     if cm.ready:
         target = None
         device_list = []
