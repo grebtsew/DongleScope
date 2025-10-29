@@ -15,22 +15,11 @@ RUN apt-get update && apt-get install -y \
     git \
     && rm -rf /var/lib/apt/lists/*
 
-COPY ./pyble /pyble
-
-
-
-# Installera pyble från källkod
-RUN cd /pyble && \
-    python setup.py install 
 
 # Installera andra beroenden
 COPY requirement.txt .
 RUN pip install --no-cache-dir -r requirement.txt
 
-RUN pip install -U git+https://github.com/brettchien/PyBLEWrapper.git
-
-# Kontrollera installationen
-#RUN python -c "import pyble"
 
 COPY . .
 

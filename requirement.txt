@@ -1,2 +1,3 @@
 PyBluez==0.20
 pyserial==3.4
+git+https://github.com/brettchien/PyBLEWrapper.git@0.2.6
