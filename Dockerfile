@@ -24,5 +24,7 @@ EXPOSE 5000
 
 RUN export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages
 
+RUN useradd -ms /bin/bash donglescopeuser
+USER donglescopeuser
 
 CMD ["python", "main.py"]
