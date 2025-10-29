@@ -20,11 +20,8 @@ class Config(object):
         self.i = i
         data = json.load(open("config.json"))
         item = data.get(str(i))
-        self.name = str(item['name'])
-        self.mode = item['mode']
-        self.address = str(item['address'])
-        self.port = item['port']
-        self.uuid = item['uuid']
-
-
-
+        self.name = str(item["name"])
+        self.mode = item["mode"]
+        self.address = str(item["address"])
+        self.port = item["port"]
+        self.uuid = item["uuid"]
