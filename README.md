@@ -13,7 +13,7 @@ Plug-N-Pwned: Comprehensive Vulnerability Analysis of OBD-II Dongles as A New Ov
 
 ## Dependency
 
-DongleScope is developed for **Python 2.7** and runs on the **MacOS** operating system. It depends on two python packages to achieve Bluetooth and BLE functions.
+DongleScope is developed for **Python 2.7** and runs on the **MacOS**/**Windows**/**Linux** operating systems. It depends on two python packages to achieve Bluetooth and BLE functions.
 
 - [PyBLEWrapper](https://github.com/brettchien/PyBLEWrapper)
 - [PyBluez](https://pypi.org/project/PyBluez/)
@@ -41,7 +41,7 @@ The following shows an example of how DongleScope can query the VIN from a vehic
 
 ## Running docker
 
-Install docker and docker-compose (included in newer version of docker). Then run using the following command.
+Install docker and docker-compose (included in newer version of docker). Then run using the following command. 
 
     # for older versions of docker
     docker-compose up 
