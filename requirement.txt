@@ -1,2 +1,2 @@
-pyble
-PyBluez
+PyBluez==0.20
+pyserial==3.4

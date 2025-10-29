@@ -1,7 +1,8 @@
 import time
 from settings import *
 from bluetooth import *
-import pyble
+import socket
+import pyble 
 from OBDPeripheral import MyPeripheral
 
 # query dongle configuration with dongle index
@@ -159,7 +160,7 @@ elif dongle_config.mode == 1:
             print "[!] Device name %s not found!" % dongle_config.name
 else:
     # Bluetooth LE
-    cm = pyble.CentralManager()
+    cm = ble.CentralManager()
     if cm.ready:
         target = None
         device_list = []
